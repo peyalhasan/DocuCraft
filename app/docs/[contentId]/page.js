@@ -1,10 +1,13 @@
-import React from 'react'
+import ContentDisplay from '@/components/ContentDisplay';
+import React from 'react';
 
-function page({params: {contentId}}) {
-console.log(contentId)
-  return (
-    <div className='text-black'>{contentId}</div>
-  )
-}
+const ContentPage = async ({ params }) => {
+    const { contentId } = await params;
+    return (
+        <div>
+            <ContentDisplay id={contentId} />
+        </div>
+    );
+};
 
-export default page
+export default ContentPage;
