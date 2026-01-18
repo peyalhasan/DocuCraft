@@ -14,7 +14,7 @@ const Header = ({docs}) => {
                     "--bg-opacity-light": "0.5",
                 }}>
                 <div className="container flex h-14 items-center justify-between gap-12">
-                    <Search />
+                    <Search docs={docs} />
                 </div>
             </div>
             <Sidebar docs={docs} />

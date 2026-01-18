@@ -3,10 +3,9 @@ import { getDocuments } from '@/lib/doc';
 import { getDocumentsByCategory } from '@/utils/doc-util';
 import React from 'react';
 
-const CategoryPage = async({params}) => {
-    const {category} = await params
+const CategoryPage = async ({ params }) => {
+    const { category } = await params
     const docs = getDocuments()
-    console.log(getDocuments)
     const matchedDocuments = getDocumentsByCategory(docs, category)
     return (
         <div>
