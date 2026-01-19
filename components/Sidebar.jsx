@@ -29,6 +29,7 @@ const Sidebar = ({ docs }) => {
             ({ parent }) => parent
         );
 
+        // Find roots wiith subRoot id 
         const nonRootsKeys = Reflect.ownKeys(nonRoots);
 
         nonRootsKeys.forEach(key => {
